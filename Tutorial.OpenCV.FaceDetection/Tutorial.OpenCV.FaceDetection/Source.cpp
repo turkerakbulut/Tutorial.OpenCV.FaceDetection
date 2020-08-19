@@ -26,7 +26,7 @@ int main()
 			Point center(faces[i].x + faces[i].width*0.5, faces[i].y + faces[i].height*0.5);
 			ellipse(img, center, Size(faces[i].width*0.5, faces[i].height*0.5), 0, 0, 360, Scalar(255, 0, 255), 4, 8, 0);
 		}
-		imshow("face detect", img);
+		imshow("Tutorial Face Detection", img);
 		const char key = (char)waitKey(5);
 		if (key == 27 || key == 'q') // ESC
 		{
