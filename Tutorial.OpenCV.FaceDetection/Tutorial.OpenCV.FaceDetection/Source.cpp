@@ -18,7 +18,6 @@ int main()
 	{
 		cap >> img;
 		cap.retrieve(img, CAP_OPENNI_BGR_IMAGE);
-		//resize(img, img, Size(1000, 640));
 		vector<Rect> faces;
 		face_cascade.detectMultiScale(img, faces, 1.1, 2, 0 | CASCADE_SCALE_IMAGE, Size(140, 140));
 		for (int i = 0; i < faces.size(); i++)
